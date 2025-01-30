@@ -1,0 +1,2 @@
+# EMIR-RASYID
+Tugas GDGoC
