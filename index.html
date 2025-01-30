@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>belajar web 1</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <h1>To do list</h1>
+    <div>
+      <input
+        id="tf-input"
+        class="textfield"
+        type="teks"
+        placeholder="Masukan teks"
+      />
+      <button class="button" onclick="addTask()">add teks</button>
+    </div>
+
+    <div>
+      <ul id="task-conatiner">
+        <li id ="task-1" class="list-item">
+          Task 1
+          <button onclick="editTask('task-1')" class="edit-button">Edit</button>
+          <button onclick="deleteTask('task-1')" class="delete-button">Delete</button>
+        </li>
+        <li class="list-item" id="task-2">
+          Task 2
+          <button onclick="editTask('task-2')" class="edit-button">Edit</button>
+          <button onclick="deletetask('task-2')" class="delete-button">Delete</button>
+        </li>
+        <li  class="list-item" id="task-3">
+          Task 3
+          <button onclick="editTask('task-3')" class="edit-button">Edit</button>
+          <button class="delete-button" onclick="deleteTask('task-3')">Delete</button>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
